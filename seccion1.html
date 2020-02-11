@@ -1,0 +1,111 @@
+<!--/////////////////////////INICIO DEL SITIO/////////////////////////-->
+<html>
+
+<!--/////////////////////////Inicio del Head/////////////////////////-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicaciones Moviles</title>
+<link rel="shortcut icon" type="image/ico" href="Imagenes/favicon.ico"/>
+<link href="CSS/Estilos.css" REL="StyleSheet" type="text/css">
+<script type="text/javascript" src="JS/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+</head>
+<!--/////////////////////////Final del Head/////////////////////////-->
+
+<!--/////////////////////////Inicio del Body/////////////////////////-->
+<body leftmargin="0px" onload="jasonvoorhees()">
+<div class="header"><a href="index.html"><img src="Imagenes/Logo.png" name="logo" id="logo"/></a></div>
+<!--/////////////////////////Inicio del Header/////////////////////////-->
+<center>
+    <div class="barramenu">
+      <a href="seccion1.html" class="boton">Seccion 1</a>
+      <a href="seccion2.html" class="boton">Seccion 2</a>
+      <a href="seccion3.html" class="boton">Seccion 3</a>
+      <a href="seccion4.html" class="boton">Seccion 4</a>
+      <a href="encuestas.html" class="boton">Encuestas</a>
+      <a href="contacto.html" class="boton">Contacto</a>
+      <a href="peticiones.html" class="boton">Peticiones</a>
+      </div>
+</center>
+<!--/////////////////////////Final del Header/////////////////////////-->
+
+<!--/////////////////////////Inicio del Contenedor/////////////////////////-->
+ <div class="contenedor">
+
+  <!--Separador Contenido-->
+
+   <!-- Galeria de Imagenes-->
+    <h2><center>Seccion 1</center></h2>
+    <div class="row">
+
+    <div class="column">
+    <div class="content" id="seccion1producto1">
+    <img id="producto1foto" src="Imagenes/Foto1.png" alt="Mountains" style="width:100%" height="180" width="320">
+    <h3 id="producto1nombre"></h3>
+    <p id="producto1descripcion" class="descripciones">  </p>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto1').style.opacity='0.5'">Seleccionar</button>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto1').style.opacity='1'">Borrar</button>
+    <button type="button" class="boton" id="producto1precio"></button>
+    <input class="boton" name="producto1" id="producto1" type="number" value="0">
+    </div>
+    </div>
+
+
+    <div class="column">
+    <div class="content" id="seccion1producto2">
+    <img id="producto2foto" src="Imagenes/Foto1.png" alt="Mountains" style="width:100%" height="180" width="320">
+    <h3 id="producto2nombre"></h3>
+    <p id="producto2descripcion" class="descripciones">  </p>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto2').style.opacity='0.5'">Seleccionar</button>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto2').style.opacity='1'">Borrar</button>
+    <button type="button" class="boton" id="producto2precio"></button>
+    <input class="boton" name="producto2" id="producto2" type="number" value="0">
+    </div>
+    </div>
+
+    <div class="column">
+    <div class="content" id="seccion1producto3">
+    <img id="producto3foto" src="Imagenes/Foto1.png" alt="Mountains" style="width:100%" height="180" width="320">
+    <h3 id="producto3nombre"></h3>
+    <p id="producto3descripcion" class="descripciones">  </p>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto3').style.opacity='0.5'">Seleccionar</button>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto3').style.opacity='1'">Borrar</button>
+    <button type="button" class="boton" id="producto3precio"></button>
+    <input class="boton" name="producto3" id="producto3" type="number" value="0">
+    </div>
+    </div>
+
+    <div class="column">
+    <div class="content" id="seccion1producto4">
+    <img id="producto4foto" src="Imagenes/Foto1.png" alt="Mountains" style="width:100%" height="180" width="320">
+    <h3 id="producto4nombre"></h3>
+    <p id="producto4descripcion" class="descripciones">  </p>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto4').style.opacity='0.5'">Seleccionar</button>
+    <button type="button" class="boton" onclick="document.getElementById('seccion1producto4').style.opacity='1'">Borrar</button>
+    <button type="button" class="boton" id="producto4precio">$</button>
+    <input class="boton" name="producto4" id="producto4" type="number" value="0">
+    </div>
+    </div>
+    </div>
+   <!--Separador Contenido-->
+
+   <center>
+   <div class="form-title" align="center"><h2><div class="titulo">Carrito de Compras</div></h2></div>
+   <input class="boton" name="carrito" id="carrito" type="button" type="submit" value="Calcular Costo" align="center">
+   <input class="boton" type="text" name="total" id="total" value="" maxlength="15" readonly align="center">
+   </center>
+
+
+ <center><button class="boton" role="button" onclick="Ocultar();">Ocultar / Mostrar Descripciones</button></center>
+<!--/////////////////////////Inicio del Footer/////////////////////////-->
+<footer class="footer">
+<p><center>Copyright 2018</center></p>
+</footer>
+<!--/////////////////////////Final del Footer/////////////////////////-->
+</div>
+<!--/////////////////////////Final del Contenedor/////////////////////////-->
+</body>
+<!--/////////////////////////Final del Body/////////////////////////-->
+</html>
+<!--/////////////////////////FINAL DEL SITIO/////////////////////////-->

@@ -1,0 +1,81 @@
+<!--/////////////////////////INICIO DEL SITIO/////////////////////////-->
+<html>
+
+<!--/////////////////////////Inicio del Head/////////////////////////-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicaciones Moviles</title>
+<link rel="shortcut icon" type="image/ico" href="Imagenes/favicon.ico"/>
+<link href="CSS/Estilos.css" REL="StyleSheet" type="text/css">
+<script type="text/javascript" src="JS/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+</head>
+<!--/////////////////////////Final del Head/////////////////////////-->
+
+<!--/////////////////////////Inicio del Body/////////////////////////-->
+<body leftmargin="0px">
+<div class="header"><a href="index.html"><img src="Imagenes/Logo.png" name="logo" id="logo"/></a></div>
+<!--/////////////////////////Inicio del Header/////////////////////////-->
+<center>
+    <div class="barramenu">
+      <a href="seccion1.html" class="boton">Seccion 1</a>
+      <a href="seccion2.html" class="boton">Seccion 2</a>
+      <a href="seccion3.html" class="boton">Seccion 3</a>
+      <a href="seccion4.html" class="boton">Seccion 4</a>
+      <a href="encuestas.html" class="boton">Encuestas</a>
+      <a href="contacto.html" class="boton">Contacto</a>
+      <a href="peticiones.html" class="boton">Peticiones</a>
+      </div>
+</center>
+<!--/////////////////////////Final del Header/////////////////////////-->
+
+<!--/////////////////////////Inicio del Contenedor/////////////////////////-->
+<div class="contenedor">
+<br>
+
+<!-- /////////////////////////Formulario de Encuesta ///////////////////////// -->
+<center>
+
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<form name="formulario" id="formulario" action="#" method="post"  class="form-container" onsubmit="return validar(event,this);">
+<div class="form-title"><h2>Encuesta</h2></div>
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<label class="form-title" for="nombre">Nombre</label>
+<input class="form-field" type="text" name="nombre" id="nombre" value="" maxlength="15" onkeypress="return soloLetras(event)">
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<label class="form-title" for="apellido">Apellido</label>
+<input class="form-field" type="text" id="apellido" name="apellido" value="" maxlength="15" onkeypress="return soloLetras(event)">
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<label class="form-title" for="nacimiento">Fecha Nacimiento</label>
+<input type="date" class="form-field" id="nacimiento" name="nacimiento" value="" maxlength="15">
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<label class="form-title" for="sexo">Sexo</label>
+<input class="form-field" id="sexo" name="sexo" value="" maxlength="15" onkeypress="return soloLetras(event)">
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<label class="form-title" for="valoracion">Valoracion del Sitio</label><select class="form-field" id="valoracion" name="valoracion">
+  <option value="Lamentable">Lamentable</option>
+  <option value="Mala">Mala</option>
+  <option value="Podria ser Mejor">Podria ser Mejor</option>
+  <option value="Buena">Buena</option>
+  <option value="Me Encanto">Me Encanto</option>
+  </select>
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<label class="form-title" for="comentario">Comentario</label>
+<input class="form-field" id="comentario" name="comentario" value="" onkeypress="return validar(event,this)"/>
+<!--/////////////////////////Soy una linda barra separadora para que sea mas comodo leer ///////////////////////// -->
+<div class="submit-container"><input class="boton" type="submit" name="enviar" value="Enviar"> <input class="boton" type="reset" value="Restablecer"></div>
+</form>
+</center>
+
+<!--/////////////////////////Inicio del Footer/////////////////////////-->
+<footer class="footer">
+<p><center>Copyright 2018</center></p>
+</footer>
+<!--/////////////////////////Final del Footer/////////////////////////-->
+</div>
+<!--/////////////////////////Final del Contenedor/////////////////////////-->
+</body>
+<!--/////////////////////////Final del Body/////////////////////////-->
+</html>
+<!--/////////////////////////FINAL DEL SITIO/////////////////////////-->

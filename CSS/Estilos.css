@@ -1,0 +1,354 @@
+/* -- Estructura CSS del Cuerpo Principal --*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	left:0px;
+	background-color: white;
+	margin-top:0px;
+	margin-bottom:0px;
+	bottom:0px;
+	#background-image: url("../Imagenes/Fondo1.jpg");
+	#background-repeat: repeat;
+}
+
+ul, ol, dl {
+	padding: 0px;
+	margin: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	bottom:0px;
+	padding-right: 15px;
+	padding-left: 15px; 
+}
+a img {
+	border: none;
+}
+
+a:link {
+	color:#414958;
+	text-decoration: underline; 
+}
+a:visited {
+	color: #4E5869;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+/* -- Estructura CSS del Contenedor Principal --*/
+.contenedor {
+	width: 100%;
+	padding-left:0px;	
+	background-color: white;
+
+}
+
+/* -- Estructura CSS del Header --*/
+.header {	
+	background-color: #333840; 
+	display:block;
+	top:0px;
+	#margin-bottom: 20px;
+	width: 100%;
+}
+
+/* -- Estructura CSS del Contenido --*/
+.contenido {	
+	width: 100%;	
+	padding-bottom:10%;
+}
+
+/* -- Estructura CSS de una Seccion --*/
+.seccion {
+ padding-bottom:2px;
+}
+
+
+/* -- Estructura CSS del Footer --*/
+.footer {		
+ width:100%;
+ margin-top:5%;
+ padding-top:5px;
+ padding-bottom:0px;
+ background-color: #1d1d1d;
+ color: #FFF;	
+ position:relative;    
+ bottom:0px;
+ padding-bottom:10px;
+ float:bottom;
+}
+
+/* -- Estructura CSS Barra del Menu de Navegacion --*/
+.barramenu {
+ background-color: #333840; 
+ overflow: auto;
+ width:%50;
+}
+div.barramenu a {
+ display: inline-block;
+ color: white;
+ text-align: center;  
+ padding-left:5px;
+ padding-right:5px;
+ text-decoration: none;
+ margin:0.5%;
+}
+/* ESTO ESTA COMENTADO
+div.barramenu a:hover {
+    background-color: #777;
+}
+*/
+
+/* -- Estructura CSS Titulo Encabezado --*/
+.titulo {
+ color:black;
+}
+
+form-title .titulo {
+ color:black;
+}
+
+.descripciones {
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 10px;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: italic;
+font-variant: normal;
+text-transform: none;
+}
+
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS CONTENEDORES PARA DIVIDIR PAGINA   --------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS CONTENEDORES PARA DIVIDIR PAGINA   --------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS CONTENEDORES PARA DIVIDIR PAGINA   --------------------------------------------------- */
+.columnas {
+    float: left;
+    width: 100%;
+}
+.left {
+  width: 40%;
+}
+.right {
+  width: 60%;
+}
+@media screen and (max-width: 600px) {
+    .columnas {
+      width: 100%;
+    }
+}
+/* --------------------------------------------- ESTRUCTURA CSS DEl BOTON   --------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DEl BOTON   --------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DEl BOTON   --------------------------------------------------- */
+.boton {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS FORMULARIOS --------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS FORMULARIOS --------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS FORMULARIOS --------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LOS FORMULARIOS --------------------------------------------- */
+.form-container {
+   border: 1px solid #000000;
+   background: #ffffff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#ffffff));
+   background: -webkit-linear-gradient(top, #f7f7f7, #ffffff);
+   background: -moz-linear-gradient(top, #f7f7f7, #ffffff);
+   background: -ms-linear-gradient(top, #f7f7f7, #ffffff);
+   background: -o-linear-gradient(top, #f7f7f7, #ffffff);
+   background-image: -ms-linear-gradient(top, #f7f7f7 0%, #ffffff 100%);
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 1px 2px, inset rgba(255,255,255,0.4) 0 1px 0;
+   font-family: 'Helvetica Neue',Helvetica,sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:20px;
+   width:350px;
+   }
+.form-field {
+   border: 0px solid #000000;
+   background: #dbdbdb;
+   -webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+   border-radius: 6px;
+   color: #000000;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(000,000,000,0.7) 0 0px 0px;
+   padding:8px;
+   margin-bottom:20px;
+   width:280px;
+   }
+.form-field:focus {
+   background: #fff;
+   color: #000000;
+   }
+.form-container h2 {
+   text-shadow: #fcfcfc 0 1px 0;
+   font-size:18px;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+    }
+.form-title {
+   margin-bottom:10px;
+   color: #3d3d3d;
+   text-shadow: #fcfcfc 0 1px 0;
+   }
+.submit-container {
+   margin:8px 0;
+   text-align:right;
+   }
+.submit-button {
+   border: 0px solid #447314;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #addc7e 0 1px 0;
+   color: #31540c;
+   font-family: helvetica, serif;
+   padding: 8.5px 18px;
+   font-size: 14px;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.submit-button:hover {
+   border: 0px solid #447314;
+   text-shadow: #31540c 0 1px 0;
+   background: #6aa436;
+   background: -webkit-gradient(linear, left top, left bottom, from(#8dc059), to(#6aa436));
+   background: -webkit-linear-gradient(top, #8dc059, #6aa436);
+   background: -moz-linear-gradient(top, #8dc059, #6aa436);
+   background: -ms-linear-gradient(top, #8dc059, #6aa436);
+   background: -o-linear-gradient(top, #8dc059, #6aa436);
+   background-image: -ms-linear-gradient(top, #8dc059 0%, #6aa436 100%);
+   color: #fff;
+   }
+.submit-button:active {
+   text-shadow: #31540c 0 1px 0;
+   border: 0px solid #447314;
+   background: #8dc059;
+   background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#6aa436));
+   background: -webkit-linear-gradient(top, #6aa436, #8dc059);
+   background: -moz-linear-gradient(top, #6aa436, #8dc059);
+   background: -ms-linear-gradient(top, #6aa436, #8dc059);
+   background: -o-linear-gradient(top, #6aa436, #8dc059);
+   background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+   color: #fff;
+   }
+/* --------------------------------------------- ESTRUCTURA CSS DE LA GALERIA -------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LA GALERIA -------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LA GALERIA -------------------------------------------------- */
+* {
+ box-sizing: border-box;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }    
+}
+
+/* --------------------------------------------- ESTRUCTURA CSS DE LA TABLA -------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LA TABLA -------------------------------------------------- */
+/* --------------------------------------------- ESTRUCTURA CSS DE LA TABLA -------------------------------------------------- */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

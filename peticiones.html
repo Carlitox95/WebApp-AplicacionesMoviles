@@ -1,0 +1,114 @@
+<!--/////////////////////////INICIO DEL SITIO/////////////////////////-->
+<html>
+
+<!--/////////////////////////Inicio del Head/////////////////////////-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicaciones Moviles</title>
+<link rel="shortcut icon" type="image/ico" href="Imagenes/favicon.ico"/>
+<link href="CSS/Estilos.css" REL="StyleSheet" type="text/css">
+<script type="text/javascript" src="JS/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+</head>
+<!--/////////////////////////Final del Head/////////////////////////-->
+
+<!--/////////////////////////Inicio del Body/////////////////////////-->
+<body leftmargin="0px">
+<div class="header"><a href="index.html"><img src="Imagenes/Logo.png" name="logo" id="logo"/></a></div>
+<!--/////////////////////////Inicio del Header/////////////////////////-->
+<center>
+    <div class="barramenu">
+      <a href="seccion1.html" class="boton">Seccion 1</a>
+      <a href="seccion2.html" class="boton">Seccion 2</a>
+      <a href="seccion3.html" class="boton">Seccion 3</a>
+      <a href="seccion4.html" class="boton">Seccion 4</a>
+      <a href="encuestas.html" class="boton">Encuestas</a>
+      <a href="contacto.html" class="boton">Contacto</a>
+      <a href="peticiones.html" class="boton">Peticiones</a>
+      </div>
+</center>
+<!--/////////////////////////Final del Header/////////////////////////-->
+
+<!--/////////////////////////Inicio del Contenedor/////////////////////////-->
+ <div class="contenedor">
+  <!--/////////////////////////Formularios de Peticiones/////////////////////////-->
+     <center>
+     <div class="row">
+
+
+
+
+     <!-- COMIENZA Columna Izquierda -->
+     <div class="columnas left">
+     <!--Peticion Asincronica HTTP con el Metodo GET -->
+     <center><div id="MetodoGet">
+     <div class="form-title"><h2>Peticion Asincronica GET</h2></div>
+     <form action ="peticion.php" name="fo" method="get" class="form-container">
+     <label class="form-title">Nombre</label>
+     <input class="form-field" type="text" name="nombre" id="nombre" value="">
+     <label class="form-title">Apellido</label>
+     <input class="form-field" type="text" name="apellido" id="apellido" value="">
+     <label class="form-title">DNI</label>
+     <input class="form-field" type="text" name="dni" id="dni" value="">
+     <div class="submit-container"><input class="boton" type="submit" name="send" value="Enviar"/></div>
+     </form>
+     <!-- Inicia la Tabla que Muestra todos los objetos del JSON -->
+       <div class="form-title"><h2><center>Objetos JSON Metodo GET</center></h2></div>
+       <table>
+       <div id="statusget"></div><!-- EN ESA LINEA LOS <TD> de la tabla los genero con el JS no tocar nada aca-->
+       </table>
+     <!-- Termina la Tabla que Muestra todos los objetos del JSON -->
+     </div>
+     </center>
+     </div>
+     <!--Peticion Asincronica HTTP con el Metodo GET -->
+     <!-- TERMINA Columna Izquierda -->
+
+
+
+     <!-- COMIENZA Columna Derecha -->
+     <div class="columnas right">
+     <!--Peticion Sincronica HTTP con el Metodo POST -->
+     <center>
+     <div id="MetodoPost">
+     <div class="form-title"><h2>Peticion Sincronica POST</h2></div>
+     <form action ="peticion.php" name="fo" method="POST" class="form-container">
+     <label class="form-title">Nombre</label>
+     <input class="form-field" type="text" name="nombre" id="nombre" value="">
+     <label class="form-title">Apellido</label>
+     <input class="form-field" type="text" name="apellido" id="apellido" value="">
+     <label class="form-title">DNI</label>
+     <input class="form-field" type="text" name="dni" id="dni" value="">
+     <div class="submit-container"><input class="boton" type="submit" name="send" value="Enviar"/></div>
+     </form>
+     <!-- Inicia la Tabla que Muestra todos los objetos del JSON -->
+       <div class="form-title"><h2><center>Objetos JSON Metodo POST</center></h2></div>
+       <table>
+       <div id="statuspost"></div> <!-- EN ESA LINEA LOS <TD> de la tabla los genero con el JS no tocar nada aca-->
+       </table>
+     <!-- Termina la Tabla que Muestra todos los objetos del JSON -->
+     </div>
+     </center>
+     <!--Peticion Sincronica HTTP con el Metodo POST -->
+     </div>
+     <!-- TERMINA Columna Derecha -->
+     </center>
+    <!--/////////////////////////Formularios de Peticiones/////////////////////////-->
+
+
+
+
+
+
+ <!--/////////////////////////Inicio del Footer/////////////////////////-->
+<footer class="footer">
+<p><center>Copyright 2018</center></p>
+</footer>
+<!--/////////////////////////Final del Footer/////////////////////////-->
+</div>
+<!--/////////////////////////Final del Contenedor/////////////////////////-->
+</body>
+<!--/////////////////////////Final del Body/////////////////////////-->
+</html>
+<!--/////////////////////////FINAL DEL SITIO/////////////////////////-->

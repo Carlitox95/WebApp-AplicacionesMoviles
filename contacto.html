@@ -1,0 +1,74 @@
+<!--/////////////////////////INICIO DEL SITIO/////////////////////////-->
+<html>
+
+<!--/////////////////////////Inicio del Head/////////////////////////-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicaciones Moviles</title>
+<link rel="shortcut icon" type="image/ico" href="Imagenes/favicon.ico"/>
+<link href="CSS/Estilos.css" REL="StyleSheet" type="text/css">
+<script type="text/javascript" src="JS/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="JS/Scripts.js"></script>
+</head>
+<!--/////////////////////////Final del Head/////////////////////////-->
+
+<!--/////////////////////////Inicio del Body/////////////////////////-->
+<body leftmargin="0px" onload="getLocation(),ContactoEmpresa()" >
+<div class="header"><a href="index.html"><img src="Imagenes/Logo.png" name="logo" id="logo"/></a></div>
+<!--/////////////////////////Inicio del Header/////////////////////////-->
+<center>
+    <div class="barramenu">
+      <a href="seccion1.html" class="boton">Seccion 1</a>
+      <a href="seccion2.html" class="boton">Seccion 2</a>
+      <a href="seccion3.html" class="boton">Seccion 3</a>
+      <a href="seccion4.html" class="boton">Seccion 4</a>
+      <a href="encuestas.html" class="boton">Encuestas</a>
+      <a href="contacto.html" class="boton">Contacto</a>
+      <a href="peticiones.html" class="boton">Peticiones</a>
+      </div>
+</center>
+<!--/////////////////////////Final del Header/////////////////////////-->
+
+<!--/////////////////////////Inicio del Contenedor/////////////////////////-->
+ <div class="contenedor">
+
+    <!--/////////////////////////Datos de Contacto/////////////////////////-->
+     <center>
+     <div class="row">
+
+     <!-- Columna Izquierda -->
+     <div class="columnas left">
+     <div class="form-title" align="center"><h2>Datos de Contacto</h2></div>
+     <div class="form-container">
+     <!-- Contenido del Contenedor -->
+     <label class="form-title" for="nombre">Empresa </label><input class="form-field" type="text" name="contactonombre" id="contactonombre" value="" readonly><br>
+     <label class="form-title" for="telefono">Telefono </label><input class="form-field" type="text" name="contactotelefono" id="contactotelefono" value="" readonly><br>
+     <label class="form-title" for="mail">Correo Electronico </label><input class="form-field" type="text" name="contactomail" id="contactomail" value="" readonly><br>
+     <label class="form-title" for="fax">Fax </label><input class="form-field" type="text" name="contactofax" id="contactofax" value="" readonly><br>
+     <!-- Contenido del Contenedor -->
+     </div>
+     </div>
+     <!-- Columna Izquierda -->
+     <!-- Columna Derecha -->
+     <div class="columnas right">
+     <div class="form-title" align="center"><h2>Ubicacion</h2></div>
+     <p type="hidden" id="UbicacionPosibleAvisoDeError"></p>
+     <div class="malholder" id="mapholder">
+     </div>
+     <!-- Columna Derecha -->
+     </div>
+     </center>
+    <!--/////////////////////////Datos de Contacto/////////////////////////-->
+</div>
+<!--/////////////////////////Inicio del Footer/////////////////////////-->
+<footer class="footer">
+<p><center>Copyright 2018</center></p>
+</footer>
+<!--/////////////////////////Final del Footer/////////////////////////-->
+</div>
+<!--/////////////////////////Final del Contenedor/////////////////////////-->
+</body>
+<!--/////////////////////////Final del Body/////////////////////////-->
+</html>
+<!--/////////////////////////FINAL DEL SITIO/////////////////////////-->
